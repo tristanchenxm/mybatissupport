@@ -18,10 +18,10 @@ select * from tbl where column_name in
 mybatis.xml配置添加
 ```xml
 <settings>
-    <setting name="defaultScriptingLanguage" value="demo.mybatis.parser.XMLLanguageDriver"/>
+    <setting name="defaultScriptingLanguage" value="nameless.common.mybatis.parser.XMLLanguageDriver"/>
 </settings>
 ```
 或者java代码配置
 ```java
-configuration.setDefaultScriptingLanguage(new nameless.common.mybatis.parser.XMLLanguageDriver);
+configuration.setDefaultScriptingLanguage(new nameless.common.mybatis.parser.XMLLanguageDriver());
 ```
