@@ -1,5 +1,5 @@
 ## 对mybatis sql脚本语句的一个小增强
-mybatis对列表参数的支持不够友好，得通过<foreach/>块实现，增加了开发的烦琐程度，降低源sql的可读性。
+mybatis对列表参数的支持不够友好，得通过&lt;foreach/&gt;块实现，增加了开发的烦琐程度，降低源sql的可读性。
 通过此工具，简单的sql IN语句可以写成
 ```sql
 select * from tbl where column_name in (#{@list})
